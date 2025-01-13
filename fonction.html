@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonction</title>
+</head>
+<body>
+    <script>
+        function addition(a, b) {
+            return a + b;
+        };
+
+        let resultat = addition(13, 26);
+        console.log(resultat);
+
+        function affiche(a) {
+            console.log(a);
+        }
+
+        affiche("Bonjour");
+
+        function simple() {
+            console.log("Bonjour");
+        }
+
+        simple();
+
+        // Créer une fonction "maximum" qui prend 2 paramètres et qui renvoie le plus grand des 2
+
+        function maximum(a, b) {
+            if (a > b) {
+                return a;
+            } else {
+                return b;
+            }
+        }
+
+        let a = prompt("Entrez un nombre");
+        let b = prompt("Entrez un autre nombre");
+
+        maximum(a, b);
+    </script>
+</body>
+</html>
