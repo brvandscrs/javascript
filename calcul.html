@@ -38,7 +38,7 @@
             let b = 58;
 
         // Déterminer si la 1ère variable et divisible par la 2ème
-            if (b % a == 0) {
+            if (a % b == 0) {
                 let divisibilite = true;
             } else {
                 divisibilite = false;
@@ -46,9 +46,9 @@
 
         // Afficher le résultat du calcul
         if (divisibilite == true) {
-            console.log(b / a);
+            console.log(a / b);
         } else {
-            console.log(b + "n'est pas divisible par" + a);
+            console.log(a + "n'est pas divisible par" + b);
         };
     </script>
 </body>
