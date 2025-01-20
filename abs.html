@@ -7,6 +7,8 @@
 </head>
 <body>
     <script>
+        // Ecrire une fonction "abs" qui prend un nombre en paramètre et renvoie sa valeur absolue.
+
         function abs(x) {
             if (x < 0) {
                 return -x;
@@ -18,6 +20,12 @@
         let i = Number(prompt("Entrez un nombre"));
 
         console.log("La valeur absolue de " + i + " est " + abs(i));
+
+        // Ecrire 3 appels de cette fonction avec 1 nombre >0, 1 nombre <0 et avec 0.
+
+        console.log("La valeur absolue de 5 est " + abs(5));
+        console.log("La valeur absolue de -9 est " + abs(-9));
+        console.log("La valeur absolue de 0 est " + abs(0));
     </script>
 </body>
 </html>
