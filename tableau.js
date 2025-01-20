@@ -10,3 +10,6 @@ console.log("etudiants", etudiants);
 
 // Afficher la taille du tableau
 console.log("Taille du tableau", etudiants.length);
+
+// Affiche le premier élément du tableau
+console.log("Premier élément", etudiants[0]);
