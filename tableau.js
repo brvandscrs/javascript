@@ -4,5 +4,9 @@ let etudiant = "Bryan";
 // Variables de type tableau , initialisée avec une liste de chaîne de caractères
 let etudiants = ["Bryan", "Anas", "Yassine", "Badr", "Ulysse"];
 
-console.log(etudiant);
-console.log(etudiants);
+// Affiche le contenu des variables
+console.log("etudiant", etudiant);
+console.log("etudiants", etudiants);
+
+// Afficher la taille du tableau
+console.log("Taille du tableau", etudiants.length);
