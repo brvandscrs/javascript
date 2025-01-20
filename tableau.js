@@ -13,3 +13,6 @@ console.log("Taille du tableau", etudiants.length);
 
 // Affiche le premier élément du tableau
 console.log("Premier élément", etudiants[0]);
+
+// Affiche le dernier élément du tableau
+console.log("Dernier élément", etudiants[etudiants.length - 1]);
