@@ -16,3 +16,6 @@ console.log("Premier élément", etudiants[0]);
 
 // Affiche le dernier élément du tableau
 console.log("Dernier élément", etudiants[etudiants.length - 1]);
+
+// Créer un tableau avec les 6 prénoms de la classe (Bryan, Ulysse, Badr, Anas, Yassine, Léo)
+let prenoms = ["Bryan", "Ulysse", "Badr", "Anas", "Yassine", "Léo"];
