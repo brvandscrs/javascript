@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test javascript</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Créer une page html avec 3 boutons en haut, Accueil, Produits, Contact et une div qui couvre le reste de la page
+    Au clic sur chacun des boutons, changer le contenu de la div pour afficher la page concernée -->
+
+    <button onclick="contenu('accueil')">Accueil</button>
+    <button onclick="contenu('produits')">Produits</button>
+    <button onclick="contenu('contact')">Contact</button>
+
+    <div class="texte"></div>
+
+    <script>
+        function contenu(page) {
+            let texte = document.querySelector('.texte');
+            if (page === 'accueil') {
+                texte.innerHTML = 'Bienvenue sur la page d\'accueil';
+            } else if (page === 'produits') {
+                texte.innerHTML = 'Voici nos produits';
+            } else if (page === 'contact') {
+                texte.innerHTML = 'Contactez-nous';
+            }
+        }
+
+        contenu('accueil');
+    </script>
+</body>
+</html>
