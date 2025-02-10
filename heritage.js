@@ -106,3 +106,8 @@ class Employe extends Contact {
         console.log("Ancienneté", this.anciennete);
     }
 }
+
+let employe1 = new Employe("Bryan", "Descours", "06/01/2005", 883, 1);
+
+employe1.afficher();
+employe1.augmenterSalaire();
