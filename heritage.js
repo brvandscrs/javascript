@@ -50,30 +50,59 @@ let felix = new Chat('Felix');
 felix.afficher();
 felix.parler();*/
 
+/*  Créer une classe Contact :
+    Propriétés :
+        Nom,
+        Prenom,
+        Date de naissance,
+
+    Méthodes :
+        afficher    // Affiche les infos du contact
+
+
+    Hériter une classe Employe:
+    Propriété :
+        Salaire
+        Anciennete (année)
+    Méthode :
+        augmenterSalaire
+            Ajoute 10% si anciennete >10
+            Sinon ajoute 5%
+        afficher (avec le salaire et l'ancienneté)
+*/
+
 class Contact {
     constructor(nom, prenom, dateNaissance) {
-        Object.assign(this, { nom, prenom, dateNaissance });
+        this.nom = nom;
+        this.prenom = prenom;
+        this.dateNaissance = dateNaissance;
     }
+
     afficher() {
-        console.log(`${this.nom} ${this.prenom}, Né(e) le: ${this.dateNaissance}`);
+        console.log("Nom", this.nom);
+        console.log("Prénom", this.prenom);
+        console.log("Date de naissance", this.dateNaissance);
     }
 }
 
 class Employe extends Contact {
     constructor(nom, prenom, dateNaissance, salaire, anciennete) {
         super(nom, prenom, dateNaissance);
-        Object.assign(this, { salaire, anciennete });
+        this.salaire = salaire;
+        this.anciennete = anciennete;
     }
+
     augmenterSalaire() {
-        this.salaire *= this.anciennete > 10 ? 1.1 : 1.05;
+        if (this.anciennete > 10) {
+            this.salaire *= 1.1;
+        } else {
+            this.salaire *= 1.05;
+        }
     }
+
     afficher() {
         super.afficher();
-        console.log(`Salaire: ${this.salaire.toFixed(2)}€, Ancienneté: ${this.anciennete} ans`);
+        console.log("Salaire", this.salaire);
+        console.log("Ancienneté", this.anciennete);
     }
 }
-
-const employe1 = new Employe("Doe", "John", "1985-06-15", 3000, 12);
-employe1.afficher();
-employe1.augmenterSalaire();
-employe1.afficher();
