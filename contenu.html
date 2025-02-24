@@ -7,18 +7,14 @@
 </head>
 <body>
     <!-- Créer une page HTML avec un bloc de script qui charge le contenu d'un fichier texte dans une div. -->
-    <div class="conteneur-text">
+    <div>
 
     </div>
 
     <script>
-        // Avec fetch
-
         fetch('contenu.txt')
             .then(response => response.text())
-            .then(data => {
-                document.querySelector('.conteneur-text').innerHTML = data;
-            });
+            .then(texte => div.innerHTML = texte);
     </script>
 </body>
 </html>
